@@ -1,0 +1,10 @@
+<p>selected-post works!</p>
+<div>
+  <ng-container *ngIf="selectedPost; else noPost">
+    <span>{{selectedPost | json}}</span>
+  </ng-container>
+
+  <ng-template #noPost>
+    <span>No Logged In Post</span>
+  </ng-template>
+</div>

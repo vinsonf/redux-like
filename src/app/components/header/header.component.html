@@ -1,0 +1,10 @@
+<p>header works!</p>
+<div>
+  <ng-container *ngIf="user; else noUser">
+    <span>{{user | json}}</span>
+  </ng-container>
+
+  <ng-template #noUser>
+    <span>No Logged In User</span>
+  </ng-template>
+</div>
